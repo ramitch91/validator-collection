@@ -346,7 +346,7 @@ much identical. Here's how it works:
   except errors.EmptyValueError:
       # Handling logic goes here
   except errors.InvalidEmailError:
-      # More handlign logic goes here
+      # More handling logic goes here
 
   email_address = validators.email(None, allow_empty = True)
   # The value of email_address will now be None
@@ -631,7 +631,7 @@ following logic:
    converted to the form we need it in.
 #. If ``value`` does not contain what we need but *can* be converted to what
    we need, do the conversion.
-#. If ``value`` does not contain what we need but *cannot* be converted to what
+#. If ``value`` does not contain what we need and *cannot* be converted to what
    we need, raise an error (or handle it however it needs to be handled).
 
 We tend to use this where we're first receiving data from outside of our control,
